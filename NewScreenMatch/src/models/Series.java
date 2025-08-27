@@ -1,10 +1,10 @@
 package models;
 
 public class Series {
-    String name;
-    String release;
-    String runtime;
-    int seasons;
+    private String name;
+    private String release;
+    private String runtime;
+    private int seasons;
 
     public Series (Title title) {
         this.name = title.Title();
@@ -22,3 +22,4 @@ public class Series {
         return "Nome: " + name + "\nAno de lançamento: " + release + "\nDuração: " + runtime + "\nTemporadas: " + seasons;
     }
 }
+
