@@ -1,9 +1,9 @@
 package models;
 
 public class Movies {
-    String name;
-    String release;
-    String runtime;
+    private String name;
+    private String release;
+    private String runtime;
     public Movies (Title title) {
         this.name = title.Title();
         this.release = title.Year();
@@ -18,3 +18,4 @@ public class Movies {
         return "Nome: " + name + "\nAno de lançamento: " + release + "\nDuração: " + runtime;
     }
 }
+
